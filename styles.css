@@ -1,0 +1,75 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: fantasy;
+}
+
+.card_container{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:rgb(200, 215, 225);
+}
+
+.card{
+    border-radius:14px;
+    padding:5px;
+    margin: 50px;
+    position:absolute;
+    background: linear-gradient(51deg, #f490ff, #be0786, #4eafff, #700099);
+    
+}
+
+.card .card-container{
+    width:100%;
+    height:100%;
+    position:relative;
+    background-color:#fff;
+    z-index:10;
+    border-radius:10px;
+    padding:15px;
+    padding-top:50px;
+    
+}
+
+.card-container h4{
+    font-size:26px;
+    margin-bottom:10px;
+}
+
+.card p {
+    font-size:17px;
+}
+
+.card::before{
+    position:absolute;
+    content:'';
+    background-color:#460060;
+    height:35px;
+    width:35px;
+    top:1.7rem;
+    right:-23px;
+    transform:rotate(45deg);
+    z-index:10;
+    
+}
+
+
+.card::after{
+    position:absolute;
+    content:attr(data-label);
+    top:15px;
+    padding-left:20px;
+    padding:5px;
+    padding-bottom: 0;
+    right:-31px;
+    width:8rem;
+    background-color:#700099;
+    z-index:12;
+    border-bottom-left-radius:8px;
+    border-top-left-radius:8px;
+    border-top-right-radius:4px;
+    color:#fff;
+    text-align: center;
+}
