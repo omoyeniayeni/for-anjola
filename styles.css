@@ -1,7 +1,7 @@
 *{
     padding:0;
     margin:0;
-    font-family: fantasy;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .card_container{
@@ -13,6 +13,7 @@
 }
 
 .card{
+    width:75%;
     border-radius:14px;
     padding:5px;
     margin: 50px;
@@ -22,8 +23,6 @@
 }
 
 .card .card-container{
-    width:100%;
-    height:100%;
     position:relative;
     background-color:#fff;
     z-index:10;
@@ -38,38 +37,17 @@
     margin-bottom:10px;
 }
 
-.card p {
-    font-size:17px;
-}
-
-.card::before{
-    position:absolute;
-    content:'';
-    background-color:#460060;
-    height:35px;
-    width:35px;
-    top:1.7rem;
-    right:-23px;
-    transform:rotate(45deg);
-    z-index:10;
-    
-}
-
-
 .card::after{
     position:absolute;
     content:attr(data-label);
     top:15px;
-    padding-left:20px;
-    padding:5px;
-    padding-bottom: 0;
-    right:-31px;
-    width:8rem;
+    padding:8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    right:16px;
     background-color:#700099;
     z-index:12;
-    border-bottom-left-radius:8px;
-    border-top-left-radius:8px;
-    border-top-right-radius:4px;
+    border-radius: 8px;
     color:#fff;
     text-align: center;
 }
