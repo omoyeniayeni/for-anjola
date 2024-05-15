@@ -75,7 +75,7 @@ main {
 }
 
 .affirmation p {
-    padding: 0 20px; /* Add padding to the left and right */
+    padding: 0 16px; /* Add padding to the left and right */
 }
 
 /* Media Queries for responsiveness */
@@ -85,11 +85,11 @@ main {
     }
 
     .affirmation h2 {
-        font-size: 1.5em; /* Smaller font size for smaller screens */
+        font-size: 1.2em; /* Smaller font size for smaller screens */
     }
 
     .affirmation p {
-        font-size: 1.2em; /* Smaller font size for smaller screens */
+        font-size: 1em; /* Smaller font size for smaller screens */
     }
 
     .photo-section img {
