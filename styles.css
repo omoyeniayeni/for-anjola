@@ -5,10 +5,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Ensure full height for body */
     text-align: center;
     color: #333;
-    padding: 10px; /* Add padding for smaller screens */
+    padding: 10px;
 }
 
 .container {
@@ -16,13 +16,9 @@ body {
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    width: 100%; /* Change to 100% to fit smaller screens */
+    width: 100%;
     max-width: 800px;
-    transition: transform 0.3s;
-}
-
-.container:hover {
-    transform: scale(1.05);
+    flex: 1; /* Allow flexible height */
 }
 
 header {
@@ -39,6 +35,11 @@ header h1 {
 
 main {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1; /* Allow flexible height */
 }
 
 .affirmation-card {
@@ -49,6 +50,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .photo-section {
@@ -86,7 +88,7 @@ main {
     }
 
     .affirmation p {
-        font-size: 1em; /* Smaller font size for smaller screens */
+        font-size: 1.2em; /* Smaller font size for smaller screens */
     }
 
     .photo-section img {
