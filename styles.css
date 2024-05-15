@@ -1,53 +1,104 @@
-*{
-    padding:0;
-    margin:0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.card_container{
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background-color:rgb(200, 215, 225);
-}
-
-.card{
-    width:75%;
-    border-radius:14px;
-    padding:5px;
-    margin: 50px;
-    position:absolute;
-    background: linear-gradient(51deg, #f490ff, #be0786, #4eafff, #700099);
-    
-}
-
-.card .card-container{
-    position:relative;
-    background-color:#fff;
-    z-index:10;
-    border-radius:10px;
-    padding:15px;
-    padding-top:50px;
-    
-}
-
-.card-container h4{
-    font-size:26px;
-    margin-bottom:10px;
-}
-
-.card::after{
-    position:absolute;
-    content:attr(data-label);
-    top:15px;
-    padding:8px;
-    padding-left: 12px;
-    padding-right: 12px;
-    right:16px;
-    background-color:#700099;
-    z-index:12;
-    border-radius: 8px;
-    color:#fff;
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     text-align: center;
+    color: #333;
+    padding: 10px; /* Add padding for smaller screens */
+}
+
+.container {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 100%; /* Change to 100% to fit smaller screens */
+    max-width: 800px;
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+header {
+    background: #FF6F61;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: 'Pacifico', cursive;
+}
+
+main {
+    padding: 20px;
+}
+
+.affirmation-card {
+    background: #F7F9FB;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-section {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.photo-section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #FF6F61;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.affirmation h2 {
+    font-size: 1.8em;
+    color: #FF6F61;
+    margin-bottom: 10px;
+}
+
+.affirmation p {
+    padding: 0 20px; /* Add padding to the left and right */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em; /* Smaller font size for smaller screens */
+    }
+
+    .affirmation h2 {
+        font-size: 1.5em; /* Smaller font size for smaller screens */
+    }
+
+    .affirmation p {
+        font-size: 1em; /* Smaller font size for smaller screens */
+    }
+
+    .photo-section img {
+        width: 150px; /* Smaller image size for smaller screens */
+        height: 150px; /* Smaller image size for smaller screens */
+    }
+
+    .affirmation-card {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    main {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
 }
