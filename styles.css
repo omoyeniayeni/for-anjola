@@ -65,6 +65,7 @@ main {
     border: 5px solid #FF6F61;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     object-fit: cover;
+    background-color: #ede6e6;
 }
 
 .affirmation h2 {
